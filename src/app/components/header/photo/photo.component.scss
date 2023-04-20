@@ -1,0 +1,17 @@
+.perfil_photo{
+  position: relative;
+  top: 115px;
+  .border_photo {
+    width: 350px;
+    height: 350px;
+    filter: invert(1);
+    position: absolute;
+  }
+
+  .photo {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    position: absolute;
+  }
+}

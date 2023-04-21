@@ -1,0 +1,56 @@
+@import "styling";
+
+$borderDetailWidth: 312px;
+$borderDetailheight: 33px;
+
+@mixin border-detail($border_in_top: true) {
+  border-style: double;
+  border-color: $gray;
+
+  @if $border-in-top {
+    border-width: 10px 0px 0px 10px;
+  } @else {
+    border-width: 0px 10px 10px 0px;
+  }
+}
+
+.skills {
+  background-color: $black;
+
+  h2 {
+    max-width: $borderDetailWidth;
+    color: $cyan;
+    font-weight: 700;
+    @include border-detail($border_in_top: true);
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  &_cards {
+    border: 1px solid $orange;
+    border-radius: 10px;
+    padding: 15px;
+
+    svg {
+      fill: $light-gray;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 15px $light-gray;
+      transform: scale(1.2);
+
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  .border_details {
+    width: $borderDetailWidth;
+    height: $borderDetailheight;
+    @include border-detail($border_in_top: false);
+
+  }
+}

@@ -1,7 +1,6 @@
-@import '../styles/colors.scss';
+@import 'styling';
 
 .main_container {
   background-color: $light-gray;
-  min-height: 70vh;
-  padding-top: 200px;
+  padding-top: 230px;
 }

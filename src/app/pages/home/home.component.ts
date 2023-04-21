@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ISvg_Icons, iconsLenguages, iconsLibsAndTools } from 'src/app/utils/icons';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  lenguagesIcons: ISvg_Icons[];
+  toolsIcons: ISvg_Icons[];
+
+  constructor() {
+    this.lenguagesIcons = iconsLenguages;
+    this.toolsIcons = iconsLibsAndTools;
+   }
 
   ngOnInit(): void {
   }

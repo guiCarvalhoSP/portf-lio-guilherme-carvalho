@@ -1,0 +1,103 @@
+@import "styling";
+
+.projects {
+  width: 100%;
+  background-color: $black;
+
+  h2 {
+    color: $orange;
+  }
+
+  .advice p{
+    text-align: center;
+    color: $gray;
+    font-size: 28px;
+  }
+
+  .container {
+    border: solid 2px $dark-cyan;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $dark-cyan;
+    height: 80%;
+
+    .cards_projects {
+      border-radius: 10px;
+      height: 450px;
+      width: 100vw;
+      max-width: 280px;
+      background-color: $gray;
+
+      p {
+        color: $light-gray;
+        span {
+          color: $white;
+          font-weight: 700;
+        }
+      }
+
+      //These parts of the code will be removed in the future
+      .image {
+        width: 90%;
+        height: 35%;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      .text {
+        width: 90%;
+
+        .titles {
+          height: 16px;
+          background-color: $white;
+          border-radius: 3px;
+          &.project {
+            &_name {
+              width: 30%;
+            }
+
+            &_tools {
+              width: 40%;
+            }
+
+            &_description {
+              width: 50%;
+            }
+          }
+        }
+
+        .content {
+          border-radius: 3px;
+          height: 16px;
+          background-color: $light-gray;
+
+          &.name {
+            width: 50%;
+          }
+
+          &.tools {
+            width: 50%;
+          }
+
+          &.description {
+            width: 100%;
+            height: 110px;
+          }
+        }
+      }
+
+      .actions {
+        width: 90%;
+        .button {
+          width: 80px;
+          height: 30px;
+          border: 1px solid $cyan;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .cards_projects:hover {
+      transform: scale(1.1);
+    }
+  }
+}

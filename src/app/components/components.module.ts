@@ -5,20 +5,23 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { PhotoComponent } from './header/photo/photo.component';
 import { MobileMenuComponent } from './header/mobile-menu/mobile-menu.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     PhotoComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    CarrouselComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CarrouselComponent
   ]
 })
 export class ComponentsModule { }

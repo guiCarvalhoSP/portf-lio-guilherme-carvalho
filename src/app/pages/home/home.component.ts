@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { iconsLenguages, iconsLibsAndTools, ISvg_Icons } from 'src/app/utils/icons';
 import { IPanelContent } from 'src/app/utils/IPainelContent';
-import { contentsSoftSkills, contentsDifferentials }   from 'src/app/utils/slidesContent';
+import { contentsDifferentials, contentsSoftSkills } from 'src/app/utils/slidesContent';
 
 @Component({
   selector: 'app-home',

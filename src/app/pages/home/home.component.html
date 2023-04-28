@@ -2,15 +2,21 @@
   <app-skills [lenguages]="lenguagesIcons" [tools]="toolsIcons"></app-skills>
 
   <div
-    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center"
+    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center margin-elements"
   >
-    <app-carrousel title="Diferenciais" [panels]="slidesDifferentials" ></app-carrousel>
-    <app-carrousel title="Soft Skills" [panels]="slidesSoftSkills"></app-carrousel>
+    <app-carrousel
+      title="Diferenciais"
+      [panels]="slidesDifferentials"
+    ></app-carrousel>
+    <app-carrousel
+      title="Soft Skills"
+      [panels]="slidesSoftSkills"
+    ></app-carrousel>
   </div>
 
   <app-projects></app-projects>
 
-  <div class="contacts container my-5" id="contacts" name="contacts">
+  <div class="contacts container" id="contacts" name="contacts">
     <h3>Contatos</h3>
     <div class="mt-2">
       <div class="row mb-4">

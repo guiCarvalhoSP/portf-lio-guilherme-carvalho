@@ -5,9 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { HomeComponent } from './pages/home/home.component';
-import { SkillsComponent } from './pages/home/skills/skills.component';
 import { ProjectsComponent } from './pages/home/projects/projects.component';
-import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SkillsComponent } from './pages/home/skills/skills.component';
 import { SharedModule } from './utils/shared/shared.module';
 
 @NgModule({

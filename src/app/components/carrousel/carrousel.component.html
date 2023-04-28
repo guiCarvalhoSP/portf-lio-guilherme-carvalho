@@ -1,33 +1,24 @@
-<div class="carousel-container">
-  <div class="gcarousel my-carousel carousel--translate">
-    
-    <ng-container *ngFor="let panel of panels; index as i" >
-      <input 
-        type="text" 
-        class="gcarousel__activator" 
-        type="radio"
-        name="carousel" 
-        (id)="panel.title"
-        (checked)="panel == panels[0]"
-      />
+<h4 class="text-center mb-2">{{ title }}</h4>
 
-      <!-- <div class="gcarousel__controls">
-        <label for="{{`${(i == 0) ? panels[panels.length - 1] : panels[i - 1]}` }}" class="gcarousel__control gcarousel__control-backward"></label>
-        <label (for)=" {{ `${(i == panels.length - 1) ? panels[0] : panels[i + 1]}` }}" class="gcarousel__control gcarousel__control-forward"></label>
-      </div> -->
-    </ng-container>
+<div class="carousel-container mb-5">
+	<ngb-carousel
+		#carousel
+		[interval]="7000"
+		[pauseOnHover]="pauseOnHover"
+		[pauseOnFocus]="pauseOnFocus"
+		(slide)="onSlide($event)"
+		class="test"
+	>
+		<ng-template ngbSlide *ngFor="let panel of panels; index as i">
+			<div class="content-slide d-flex px-3 pt-3 pb-5">
 
+				<img class="image me-3" [src]="panel.imageUrl" [alt]="panel.title"/>
 
-      <div class="gcarousel__track" >
-        <li class="gcarousel__slide" *ngFor="let panel of panels">
-          <h4>{{ panel.title }}</h4>
-          <p>{{ panel.content }}</p>
-        </li>
-      </div>
-
-    <div class="gcarousel__indicators" >
-      <label *ngFor="let panel of panels" for={{panel.title}} class="carousel__indicator" ></label>
-    </div>
-
-  </div>
+				<div class="slide-content d-flex flex-column">
+					<h5>{{ panel.title }}</h5>
+					<p>{{ panel.content }}</p>
+				</div>
+			</div>
+		</ng-template>
+	</ngb-carousel>
 </div>

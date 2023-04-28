@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { PhotoComponent } from './header/photo/photo.component';
 import { MobileMenuComponent } from './header/mobile-menu/mobile-menu.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import { SharedModule } from '../utils/shared/shared.module';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     CarrouselComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    // NgbCarouselModule,
+    SharedModule
   ],
   exports: [
     HeaderComponent,

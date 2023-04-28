@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ISvg_Icons, iconsLenguages, iconsLibsAndTools } from 'src/app/utils/icons';
+
+import { iconsLenguages, iconsLibsAndTools, ISvg_Icons } from 'src/app/utils/icons';
+import { IPanelContent } from 'src/app/utils/IPainelContent';
+import { contentsSoftSkills, contentsDifferentials }   from 'src/app/utils/slidesContent';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +13,9 @@ export class HomeComponent implements OnInit {
 
   lenguagesIcons: ISvg_Icons[];
   toolsIcons: ISvg_Icons[];
+
+  slidesSoftSkills: IPanelContent[] = contentsSoftSkills;
+  slidesDifferentials: IPanelContent[] = contentsDifferentials;
 
   constructor() {
     this.lenguagesIcons = iconsLenguages;

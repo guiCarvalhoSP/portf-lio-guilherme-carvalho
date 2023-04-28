@@ -7,6 +7,8 @@ import { ComponentsModule } from './components/components.module';
 import { HomeComponent } from './pages/home/home.component';
 import { SkillsComponent } from './pages/home/skills/skills.component';
 import { ProjectsComponent } from './pages/home/projects/projects.component';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from './utils/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ProjectsComponent } from './pages/home/projects/projects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

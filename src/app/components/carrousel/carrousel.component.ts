@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbCarouselConfig, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+
 import { IPanelContent } from 'src/app/utils/IPainelContent';
 
 @Component({
@@ -9,25 +11,49 @@ import { IPanelContent } from 'src/app/utils/IPainelContent';
 })
 export class CarrouselComponent implements OnInit {
 
-  // @Input()
-  panels: IPanelContent[] = [
-    {
-      title: 'Teste',
-      content: 'Lorem ipsum dolor sit',
-    },
-    {
-      title: 'Teste2',
-      content: 'Lorem ipsum dolor sit amet ',
-    },
-    {
-      title: 'Teste3',
-      content: 'Lorem ipsum dolor sit amet ',
-    },
-];
+  @Input()
+  title: string = '';
 
-  constructor() { }
+  @Input()
+  panels: IPanelContent[] = [];
+
+  paused = false;
+  unpauseOnArrow = false;
+  pauseOnIndicator = false;
+  pauseOnHover = true;
+  pauseOnFocus = true;
+
+  @ViewChild('carousel', { static: true }) carousel!: NgbCarousel ;
+
+	constructor(carouselConfig: NgbCarouselConfig) {
+		// customize default values of carousels used by this component tree
+		carouselConfig.showNavigationArrows = false;
+  }
 
   ngOnInit(): void {
   }
+
+
+	togglePaused() {
+		if (this.paused) {
+			this.carousel.cycle();
+		} else {
+			this.carousel.pause();
+		}
+		this.paused = !this.paused;
+	}
+
+	onSlide(slideEvent: NgbSlideEvent) {
+		if (
+			this.unpauseOnArrow &&
+			slideEvent.paused &&
+			(slideEvent.source === NgbSlideEventSource.ARROW_LEFT || slideEvent.source === NgbSlideEventSource.ARROW_RIGHT)
+		) {
+			this.togglePaused();
+		}
+		if (this.pauseOnIndicator && !slideEvent.paused && slideEvent.source === NgbSlideEventSource.INDICATOR) {
+			this.togglePaused();
+		}
+	}
 
 }

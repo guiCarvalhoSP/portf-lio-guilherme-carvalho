@@ -1,158 +1,45 @@
-@import 'styling';
+@import "styling";
 
-/**
-  * Control & indicator mixin
-*/
-.gcarousel{
-  height: 250px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  padding: 0;
-  list-style: none;
-
-  // &__slide
-  &__controls,
-  &__activator{
-    display: none;
-  }
-
-  /**
-  * Where the magic happens
-  */
-  @for $num from  1 through 3{
-    &__activator:nth-of-type($num){
-      &:checked ~ .carousel__track {
-        transform: translateX(-(($num - 1) * 100%));
-      }
-
-      &:checked ~ .carousel__slide:nth-of-type($num) {
-        transition: opacity .5s, transform .5s;
-        top: 0;
-        left: 0;
-        right: 0;
-        opacity: 1;
-        transform: scale(1);
-      }
-      &:checked ~ .carousel__controls:nth-of-type($num) {
-        display: block;
-        opacity: 1;
-      }
-      &:checked ~ .carousel__indicators .carousel__indicator:nth-of-type($num){
-        opacity: 1;
-      }
-    }
-  }
-
-  /**
-    * Control element - right/left arrows
-  */
-  &__control{
-    height: 30px;
-    width: 30px;
-    margin-top: -(30px / 2);
-    top: 50%;
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    border-width: 5px 5px 0 0;
-    border-style: solid;
-    border-color: $white;
-    opacity: .35;
-    outline: 0;
-    z-index: 3;
-
-    &:hover{
-      opacity: 1;
-    }
-
-    &-backward {
-      left: 10px;
-      transform:  rotate(-135deg);
-    }
-
-    &-forward {
-      right: 10px;
-      transform: rotate(45deg);
-    }
-  }
-
-  /**
-    * Element for holding slide indicators
-  */
-  &__indicators {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /**
-    * Indicator for indicating active slide
-  */
-  &__indicator {
-    height: 15px;
-    width: 15px;
-    border-radius: 100%;
-    display: inline-block;
-    z-index: 2;
-    cursor: pointer;
-    opacity: .35;
-    margin: 0 2.5px 0 2.5px;
-    &:hover {
-      opacity: .75;
-    }
-  }
-
-  /**
-    * Create rules for when slides are contained within a track
-  */
-  &__track {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    transition: transform .5s ease 0s;
-
-    .gcarousel__slide {
-      display: block;
-      width: 100%;
-      opacity: 1;
-      @for $num from  1 through 3{ 
-
-        &:nth-of-type($num){
-          transform: translateX(($num - 1) * 100%);
-        }
-      }
-    }
-  }
-
-  &__slide {
-    height: 100%;
-    position: absolute;
-    overflow-y: auto;
-    opacity: 0;
-  }
-
+h4 {
+  color: $gray;
 }
 
 .carousel-container {
-  display: inline-block;
-}
-
-.my-carousel {
-  border-radius: 5px;
-  margin: 30px;
-}
-
-.gcarousel__slide {
-  overflow: hidden;
-}
-
-.gcarousel__indicator {
+  width: 50vw;
+  border-radius: 10px;
+  max-width: 440px;
+  min-width: 340px;
+  box-shadow: 0px 0px 10px $gray;
   background-color: $white;
+}
+
+.content-slide {
+  border-radius: 10px;
+  height: 200px;
+
+  .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .slide-content {
+    // width: 60%;
+    h5 {
+      color: $light-gray;
+    }
+
+    p {
+      font-size: 13px;
+      color: $gray;
+      text-align: justify;
+      overflow: auto;
+    }
+  }
+}
+
+:host ::ng-deep .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: $gray;
 }

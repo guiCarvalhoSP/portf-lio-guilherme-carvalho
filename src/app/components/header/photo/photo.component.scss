@@ -16,3 +16,21 @@
     position: absolute;
   }
 }
+
+@media (max-width: 768px) {
+  .perfil_photo{
+    top: 640px;
+    .border_photo {
+      width: 330px;
+      height: 330px;
+      filter: none;
+    }
+  
+    .photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+}

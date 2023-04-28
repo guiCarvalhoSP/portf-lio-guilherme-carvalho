@@ -1,0 +1,30 @@
+<div class="menu_mobile w-100 d-flex justify-content-end align-items-center">
+
+  <nav class="menu_mobile_items d-flex" [ngClass]="{'active': menuOpen}">
+    <ul class="d-flex flex-column">
+      <li>
+        <a href="#description" (click)="openOrCloseMobileMenu()">Quem sou?</a>
+      </li>
+  
+      <li>
+        <a href="#skills" (click)="openOrCloseMobileMenu()">Habilidades</a>
+      </li>
+  
+      <li>
+        <a href="#projects" (click)="openOrCloseMobileMenu()">Projetos</a>
+      </li>
+  
+      <li>
+        <a href="#contacts" (click)="openOrCloseMobileMenu()">Contatos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h4>Menu</h4>
+
+  <button class="button-menu mx-3 rounded" [ngClass]="{'active': menuOpen}" (click)="openOrCloseMobileMenu()">
+    <div class="traces trace1"></div>
+    <div class="traces trace2"></div>
+    <div class="traces trace3"></div>
+  </button>
+</div>

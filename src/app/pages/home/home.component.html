@@ -1,3 +1,65 @@
 <main>
-    <app-skills [lenguages]="lenguagesIcons" [tools]="toolsIcons"></app-skills>
+  <app-skills [lenguages]="lenguagesIcons" [tools]="toolsIcons"></app-skills>
+
+  <div
+    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center"
+  >
+    <app-carrousel title="Diferenciais" [panels]="slidesDifferentials" ></app-carrousel>
+    <app-carrousel title="Soft Skills" [panels]="slidesSoftSkills"></app-carrousel>
+  </div>
+
+  <app-projects></app-projects>
+
+  <div class="contacts container my-5" id="contacts" name="contacts">
+    <h3>Contatos</h3>
+    <div class="mt-2">
+      <div class="row mb-4">
+        <div class="col-xl-6 col-12 mb-4 mb-md-0">
+          <h4>
+            <i class="fa-solid fa-phone fa-rotate-270"></i>
+            Telefone/Whatsapp:
+          </h4>
+          <p class="ms-md-5">(11) 99377-7427</p>
+        </div>
+
+        <div class="col-xl-6 col-12 text-md-end">
+          <h4>
+            <i class="fa-solid fa-envelope"></i>
+            Email:
+          </h4>
+          <p class="me-md-5">guilhermediascarvalhooo@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-12 mb-4 mb-md-0">
+          <h4>
+            <i class="fa-brands fa-linkedin"></i>
+            Linkedin:
+          </h4>
+          <a
+            class="ms-md-5"
+            href="https://www.linkedin.com/in/guilherme-dias-carvalho/"
+            target="_blank"
+          >
+            https://www.linkedin.com/in/guilherme-dias-carvalho/
+          </a>
+        </div>
+
+        <div class="col-xl-6 col-12 text-md-end">
+          <h4>
+            <i class="fa-brands fa-github"></i>
+            Github:
+          </h4>
+          <a
+            class="me-md-5"
+            href="https://github.com/guiCarvalhoSP"
+            target="_blank"
+          >
+            https://github.com/guiCarvalhoSP
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>

@@ -1,7 +1,9 @@
-@import 'styling';
-
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@200;300;400;500;700&family=Ubuntu:wght@400;700&display=swap');
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@import 'styling';
+@import 'definitions';
 
 * {
   margin: 0;
@@ -11,32 +13,27 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, and, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
-	border:0;
-	font-size:100%;
-	margin:0;
-	outline:0;
-	padding:0;
-	vertical-align:baseline;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
-p {
-  font-size: 16px;
-
-}
-h1 {
-  font-size: 67px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: $gray;
+  // box-shadow: inset 0px 0px 5px $light-gray;
 }
 
-h2 {
-  font-size: 50px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $dark-cyan;
+  border-radius: 5px;
 }
 
-h3 {
-  font-size: 33px
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $cyan;
 }
 
 .icon {

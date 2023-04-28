@@ -1,71 +1,76 @@
-<header class="header">
-  <div class="container d-flex justify-content-between pt-3">
-    <div class="d-flex">
-      <div class="icon link me-2">
-        <a href="https://github.com/guiCarvalhoSP" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-
-      <div class="icon link">
-        <a href="https://www.linkedin.com/in/guilherme-dias-carvalho/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="d-flex align-items-center">
-      <div class="icon me-2">
-        <i class="fa-solid fa-phone fa-rotate-270"></i>
-      </div>
-
-      <p class="cell_number">(11) 99377-7427</p>
-    </div>
-  </div>
-
-  <nav class="pt-5">
-    <ul class="menu_items w-100 d-flex justify-content-around align-items-center">
+<header>
+  <app-mobile-menu *ngIf="mobileWindow"></app-mobile-menu>
+  <div class="header">
+    <div class="container-lg d-flex justify-content-between pt-3">
       <div class="d-flex">
-        <li>
+        <div class="icon link me-2">
+          <a href="https://github.com/guiCarvalhoSP" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+  
+        <div class="icon link">
+          <a href="https://www.linkedin.com/in/guilherme-dias-carvalho/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+  
+      <div class="d-flex align-items-center">
+        <div class="icon me-2">
+          <i class="fa-solid fa-phone fa-rotate-270"></i>
+        </div>
+  
+        <p class="cell_number">(11) 99377-7427</p>
+      </div>
+    </div>
+  
+    <nav class="pt-5">
+      <ul class="menu_items w-100 d-flex justify-content-around align-items-center">
+  
+        <li *ngIf="!mobileWindow">
           <a href="#description">Quem sou?</a>
         </li>
-        <li>
+  
+        <li *ngIf="!mobileWindow">
           <a href="#skills">Habilidades</a>
         </li>
-
-      </div>
-
-      <li>
-        <img class="brand" src="../../../assets/brand.png" alt="Guilherme Carvalho" />
-      </li>
-
-      <div class="d-flex">
+  
         <li>
-          <a href="#">Projetos</a>
+          <img class="brand" src="./assets/brand.png" alt="Guilherme Carvalho" />
         </li>
-        <li>
-          <a href="#">Contatos</a>
+  
+        <li *ngIf="!mobileWindow">
+          <a href="#projects">Projetos</a>
         </li>
+  
+        <li *ngIf="!mobileWindow">
+          <a href="#contacts">Contatos</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div id="description"
+      class="container-lg d-flex  justify-content-center justify-content-md-between align-items-start flex-wrap"
+      name="description">
+      <div class="title">
+        <h3>Desenvolvedor</h3>
+        <h1>Fullstack</h1>
       </div>
-    </ul>
-  </nav>
-
-  <div id="description" class="container d-flex justify-content-between align-items-start" name="description">
-    <div class="title">
-      <h3>Desenvolvedor</h3>
-      <h1>Fullstack</h1>
+  
+      <div class="about">
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam officia maxime, inventore dolores numquam tempora! Temporibus ut ea placeat eum, architecto esse repellat dolor harum mollitia omnis similique, qui quam atque voluptatum blanditiis aperiam! Aut, incidunt beatae, doloremque odit nobis impedit quis placeat atque ab nisi illo ea voluptates magnam, possimus laborum nam eligendi? Consequuntur praesentium quae quaerat voluptas?
+        </p> -->
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde laboriosam numquam tenetur dolorem aspernatur
+          perspiciatis minus beatae repudiandae nisi facilis error nam, recusandae deleniti incidunt accusamus minima, at
+          aliquid architecto?
+        </p>
+        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus mollitia atque magnam. At inventore, porro modi molestias est quia, architecto corporis iusto voluptatum delectus numquam quo iure. Voluptatem, architecto. -->
+      </div>
     </div>
-
-    <div class="about">
-      <!-- <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam officia maxime, inventore dolores numquam tempora! Temporibus ut ea placeat eum, architecto esse repellat dolor harum mollitia omnis similique, qui quam atque voluptatum blanditiis aperiam! Aut, incidunt beatae, doloremque odit nobis impedit quis placeat atque ab nisi illo ea voluptates magnam, possimus laborum nam eligendi? Consequuntur praesentium quae quaerat voluptas?
-      </p> -->
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde laboriosam numquam tenetur dolorem aspernatur perspiciatis minus beatae repudiandae nisi facilis error nam, recusandae deleniti incidunt accusamus minima, at aliquid architecto?
-      </p>
-      <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus mollitia atque magnam. At inventore, porro modi molestias est quia, architecto corporis iusto voluptatum delectus numquam quo iure. Voluptatem, architecto. -->
-    </div>
+  
+    <app-photo></app-photo>
   </div>
-
-  <app-photo></app-photo>
 </header>

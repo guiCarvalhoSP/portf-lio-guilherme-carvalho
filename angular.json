@@ -25,7 +25,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images/",
+              "src/assets/images/icons"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -99,7 +101,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images/",
+              "src/assets/images/icons"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",

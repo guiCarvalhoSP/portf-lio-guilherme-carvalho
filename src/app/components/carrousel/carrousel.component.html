@@ -1,0 +1,24 @@
+<h4 class="text-center mb-2">{{ title }}</h4>
+
+<div class="carousel-container mb-5">
+	<ngb-carousel
+		#carousel
+		[interval]="7000"
+		[pauseOnHover]="pauseOnHover"
+		[pauseOnFocus]="pauseOnFocus"
+		(slide)="onSlide($event)"
+		class="test"
+	>
+		<ng-template ngbSlide *ngFor="let panel of panels; index as i">
+			<div class="content-slide d-flex px-3 pt-3 pb-5">
+
+				<img class="image me-3" [src]="panel.imageUrl" [alt]="panel.title"/>
+
+				<div class="slide-content d-flex flex-column">
+					<h5>{{ panel.title }}</h5>
+					<p>{{ panel.content }}</p>
+				</div>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+</div>

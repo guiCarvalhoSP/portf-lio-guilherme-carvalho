@@ -1,0 +1,45 @@
+@import "styling";
+
+h4 {
+  color: $gray;
+}
+
+.carousel-container {
+  width: 50vw;
+  border-radius: 10px;
+  max-width: 440px;
+  min-width: 340px;
+  box-shadow: 0px 0px 10px $gray;
+  background-color: $white;
+}
+
+.content-slide {
+  border-radius: 10px;
+  height: 200px;
+
+  .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .slide-content {
+    // width: 60%;
+    h5 {
+      color: $light-gray;
+    }
+
+    p {
+      font-size: 13px;
+      color: $gray;
+      text-align: justify;
+      overflow: auto;
+    }
+  }
+}
+
+:host ::ng-deep .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: $gray;
+}

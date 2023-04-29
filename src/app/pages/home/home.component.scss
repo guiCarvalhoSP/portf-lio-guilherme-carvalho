@@ -2,20 +2,36 @@
 
 
 .contacts {
+  background-color: $orange;
   h3, h4 {
     color: $black;
   }
 
   p, a {
     font-size: 20px;
-    color: $gray;
+    color: $white;
     text-decoration: none;
   }
 
   h4 {
     span, a{
-      color: $gray;
+      color: $white;
       font-size: 20px;
+    }
+  }
+}
+
+.more-informations {
+  box-shadow: 0px 0px 10px $light-gray;
+  p {
+    text-align: justify;
+  }
+
+  a {
+    color: $dark-cyan;
+    text-decoration: none;
+    &:hover {
+      color: $dark-orange;
     }
   }
 }

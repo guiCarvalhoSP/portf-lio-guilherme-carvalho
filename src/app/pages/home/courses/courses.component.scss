@@ -1,0 +1,68 @@
+@import "styling";
+
+$border_width: 346px;
+
+.card-container {
+  background-color: $gray;
+  color: $white;
+
+  h3 span {
+    @include border-detail($border_in_top: true, $color: $light-gray);
+  }
+
+  .card-course {
+    width: 340px;
+    height: 233px;
+    border: 2px solid $light-gray;
+    font-style: italic;
+    transition: 0.15s ease-in;
+
+    .technologies_list {
+      min-height: 40px;
+    }
+
+    h5 {
+      color: $dark-cyan;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .sub-title {
+      font-weight: 700;
+      text-decoration: underline;
+      font-style: normal;
+      font-size: 16px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 10px $light-gray;
+    }
+
+    a {
+      background-color: $dark-cyan;
+      color: $white;
+
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+  }
+
+  .show-more {
+    background-color: $orange;
+    color: $white;
+
+    &:hover {
+      background-color: $dark-orange;
+    }
+  }
+  
+  .border_details {
+    width: $border_width;
+    height: 47px;
+    @include border-detail($border_in_top: false, $color: $light-gray);
+  }
+}

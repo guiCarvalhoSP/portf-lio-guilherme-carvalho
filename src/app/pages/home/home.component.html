@@ -2,64 +2,93 @@
   <app-skills [lenguages]="lenguagesIcons" [tools]="toolsIcons"></app-skills>
 
   <div
-    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center"
-  >
-    <app-carrousel title="Diferenciais" [panels]="slidesDifferentials" ></app-carrousel>
+    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center margin-elements">
+    <app-carrousel title="Diferenciais" [panels]="slidesDifferentials"></app-carrousel>
     <app-carrousel title="Soft Skills" [panels]="slidesSoftSkills"></app-carrousel>
   </div>
 
   <app-projects></app-projects>
 
-  <div class="contacts container my-5" id="contacts" name="contacts">
-    <h3>Contatos</h3>
-    <div class="mt-2">
-      <div class="row mb-4">
-        <div class="col-xl-6 col-12 mb-4 mb-md-0">
-          <h4>
-            <i class="fa-solid fa-phone fa-rotate-270"></i>
-            Telefone/Whatsapp:
-          </h4>
-          <p class="ms-md-5">(11) 99377-7427</p>
+  <div class="contacts py-4 margin-elements" id="contacts" name="contacts">
+    <div class="container">
+      <h3>Contatos</h3>
+      <div class="mt-2">
+        <div class="row mb-4">
+          <div class="col-xl-6 col-12 mb-4 mb-md-0">
+            <h4>
+              <i class="fa-solid fa-phone fa-rotate-270"></i>
+              Telefone/Whatsapp:
+            </h4>
+            <p class="ms-md-5">(11) 99377-7427</p>
+          </div>
+
+          <div class="col-xl-6 col-12 text-md-end">
+            <h4>
+              <i class="fa-solid fa-envelope"></i>
+              Email:
+            </h4>
+            <p class="me-md-5">guilhermediascarvalhooo@gmail.com</p>
+          </div>
         </div>
 
-        <div class="col-xl-6 col-12 text-md-end">
-          <h4>
-            <i class="fa-solid fa-envelope"></i>
-            Email:
-          </h4>
-          <p class="me-md-5">guilhermediascarvalhooo@gmail.com</p>
-        </div>
-      </div>
+        <div class="row">
+          <div class="col-xl-6 col-12 mb-4 mb-md-0">
+            <h4>
+              <i class="fa-brands fa-linkedin"></i>
+              Linkedin:
+            </h4>
+            <a class="ms-md-5" href="https://www.linkedin.com/in/guilherme-dias-carvalho/" target="_blank">
+              https://www.linkedin.com/in/guilherme-dias-carvalho/
+            </a>
+          </div>
 
-      <div class="row">
-        <div class="col-xl-6 col-12 mb-4 mb-md-0">
-          <h4>
-            <i class="fa-brands fa-linkedin"></i>
-            Linkedin:
-          </h4>
-          <a
-            class="ms-md-5"
-            href="https://www.linkedin.com/in/guilherme-dias-carvalho/"
-            target="_blank"
-          >
-            https://www.linkedin.com/in/guilherme-dias-carvalho/
-          </a>
-        </div>
-
-        <div class="col-xl-6 col-12 text-md-end">
-          <h4>
-            <i class="fa-brands fa-github"></i>
-            Github:
-          </h4>
-          <a
-            class="me-md-5"
-            href="https://github.com/guiCarvalhoSP"
-            target="_blank"
-          >
-            https://github.com/guiCarvalhoSP
-          </a>
+          <div class="col-xl-6 col-12 text-md-end">
+            <h4>
+              <i class="fa-brands fa-github"></i>
+              Github:
+            </h4>
+            <a class="me-md-5" href="https://github.com/guiCarvalhoSP" target="_blank">
+              https://github.com/guiCarvalhoSP
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <app-courses></app-courses>
+
+  <div class="container  more-informations rounded py-3">
+    <h4 class="text-center">Informações extras</h4>
+    <p class="text-center">
+      <small>Você chegou ate aqui? Muito obrigado pela atenção! Veja então algumas informações extras pessoais
+        minhas abaixo. 😁</small>
+    </p>
+
+    <p class="my-2">
+      Além de programador, nas horas vagas sou um artista. Faço pinturas com
+      lapís aquarelável, tintas acrílicas e principalmente faço pinturas
+      digitais. Muitas vezes em minhas artes gosto de "brincar" com os
+      significados, e deixar a cargo do espectador criar seu próprio significado
+      das obras. Caso deseje ver algumas das minhas pinturas, veja meu
+      <a href="https://www.instagram.com/guilherme_dcarvalho0/" target="_blank">
+        Instragram
+      </a> 🙂.
+    </p>
+    <p class="my-2">
+      Uma coisa que gosto de fazer é cozinhar; frequentemente testo e crio novas receitas, e fico feliz quando faço algo
+      que as pessoas elogiam o sabor. Nem sempre as receitas dão certo 😅, mas é somente testando e tantando várias vezes
+      que se pode aperfeiçoar elas!
+    </p>
+
+    <p class="my-2">
+      Sou um adepto das artes marciais. Tenho um objetivo de aprender o máximo de técnicas possíveis das mais variadas
+      artes, assim como suas filosofias que as regem. Atualmente sou praticante de Muay Thai.
+    </p>
+    <p class="my-1">
+      Também gosto de jogos, sejam eles brincadeiras para fazer com um grupo de amigos, eletrônicos, ou de jogos de
+      tabuleiro. Nos jogos eletrônicos gosto dos genêros simulação, tycoons (jogos de gerenciamento), ação e de vez em
+      quando puzzles; já nos de tabuleiro, gosto especialmente de RPG's de mesa.
+    </p>
   </div>
 </main>

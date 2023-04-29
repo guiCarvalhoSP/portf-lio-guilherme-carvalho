@@ -1,0 +1,33 @@
+<div class="card-container margin-elements py-5 position-relative">
+  <div class="container d-flex flex-wrap justify-content-md-between justify-content-center">
+    <h3 class="mb-5 w-100">
+      <span class="ps-2">Cursos e certificados</span>
+    </h3>
+  
+    <div class="card-course p-2 rounded mb-3" *ngFor="let card of actualCardsContent;">
+        <h5>{{ card.title }}</h5>
+        <p class="technologies_list">
+          <span class="sub-title">Aprendizados:</span>
+          <span *ngFor="let item of card.learnings; last as isLast">
+             {{ item }}{{ isLast ? "." : ", "}}
+          </span>
+        </p>
+        <p><span class="sub-title">Local:</span> {{ card.local }} </p>
+        <p><span class="sub-title">Carga Horária:</span> {{ card.workload }}H </p>
+        <p><span class="sub-title">Conclusão:</span> {{ card.date }}H </p>
+
+        <a [href]="card.certicadeUrl" class="btn btn-sm mt-2" target="_blank">Ver certificado</a>
+    </div>
+
+    <div class="w-100 d-flex justify-content-center mt-3">
+      <button class="show-more btn btn-lg" *ngIf="!allCoursesLoaded" (click)="increaseCardsQtd()">
+        Ver mais +
+      </button>
+    </div>
+
+    <div class="container d-flex justify-content-end mt-5">
+      <div class="border_details"></div>
+    </div>
+
+  </div>
+</div>

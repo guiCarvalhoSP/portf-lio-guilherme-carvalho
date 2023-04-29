@@ -1,0 +1,10 @@
+@mixin border-detail($border_in_top: true, $color: #b3b3b3) {
+  border-style: double;
+  border-color: $color;
+
+  @if $border-in-top {
+    border-width: 10px 0px 0px 10px;
+  } @else {
+    border-width: 0px 10px 10px 0px;
+  }
+}

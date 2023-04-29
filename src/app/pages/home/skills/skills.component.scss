@@ -3,17 +3,6 @@
 $borderDetailWidth: 312px;
 $borderDetailheight: 33px;
 
-@mixin border-detail($border_in_top: true) {
-  border-style: double;
-  border-color: $gray;
-
-  @if $border-in-top {
-    border-width: 10px 0px 0px 10px;
-  } @else {
-    border-width: 0px 10px 10px 0px;
-  }
-}
-
 .skills {
   background-color: $black;
 
@@ -21,7 +10,7 @@ $borderDetailheight: 33px;
     max-width: $borderDetailWidth;
     color: $cyan;
     font-weight: 700;
-    @include border-detail($border_in_top: true);
+    @include border-detail($border_in_top: true, $color: $gray);
   }
 
   h3 {
@@ -32,7 +21,7 @@ $borderDetailheight: 33px;
     border: 1px solid $orange;
     border-radius: 10px;
     padding: 15px;
-
+    transition: 0.15s ease-in;
     svg {
       fill: $light-gray;
     }
@@ -50,7 +39,6 @@ $borderDetailheight: 33px;
   .border_details {
     width: $borderDetailWidth;
     height: $borderDetailheight;
-    @include border-detail($border_in_top: false);
-
+    @include border-detail($border_in_top: false, $color: $gray);
   }
 }

@@ -40,6 +40,5 @@ $borderDetailheight: 33px;
     width: $borderDetailWidth;
     height: $borderDetailheight;
     @include border-detail($border_in_top: false, $color: $gray);
-
   }
 }

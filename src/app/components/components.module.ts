@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MobileMenuComponent } from './header/mobile-menu/mobile-menu.component';
 import { PhotoComponent } from './header/photo/photo.component';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PhotoComponent } from './header/photo/photo.component';
     FooterComponent,
     PhotoComponent,
     MobileMenuComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    ScrollTopComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { PhotoComponent } from './header/photo/photo.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    ScrollTopComponent
   ]
 })
 export class ComponentsModule { }

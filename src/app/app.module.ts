@@ -8,13 +8,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/home/projects/projects.component';
 import { SkillsComponent } from './pages/home/skills/skills.component';
 import { SharedModule } from './utils/shared/shared.module';
+import { CoursesComponent } from './pages/home/courses/courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,

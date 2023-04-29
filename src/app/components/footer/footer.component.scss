@@ -2,15 +2,33 @@
 
 .footer {
   width: 100%;
-  height: 130px;
   color: $white;
-  background-color: #3B3B3B;
-  text-align: center;
-  p {
-    font-size: 1.1em;
-    margin: 0;
-    span {
-      font-weight: 600;
+  background-color: $black;
+  box-shadow: 0px -5px 10px $light-gray;
+
+  a {
+    color: $light-gray;
+    &:hover {
+      color: $gray;
     }
+  }
+  
+  ul {
+    list-style: none;
+    color: $light-gray;
+
+    h5 {
+      color: $orange;
+      margin-bottom: .5em;
+    }
+  }
+
+  p {
+    color: $gray;
+  }
+
+  .brand {
+    width: 180px;
+    height: 70px;
   }
 }

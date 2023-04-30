@@ -65,6 +65,28 @@ export const listCourses: ICourses[] = [
     date: '05/2022'
   },
   {
+    title: 'React do Zero a Maestria (c/ hooks, router, API, Projetos)',
+    learnings: [
+      'React', 'React Hooks', 'React Routes', 'Context API', 'Redux', 'MongoDB', 'SPAs'
+    ],
+    workload: 30,
+    local: "Udemy",
+    certicadeUrl: "https://www.udemy.com/certificate/UC-ee45d4a2-3080-497e-8772-7f1d2fa0d70b/",
+    relevance: 5,
+    date: '12/2022'
+  },
+  {
+    title: 'Java Intermediário',
+    learnings: [
+      'Java', 'Enums', 'Bibliotecas Math, Data e Locale', 'Threads'
+    ],
+    workload: 9,
+    local: "Loiane.training",
+    certicadeUrl: "https://loiane.training/certificado/chHrQsXDuOrbi80UjLfo",
+    relevance: 10,
+    date: '09/2022'
+  },
+  {
     title: 'Java Básico',
     learnings: [
       'Java', 'POO', 'Herança', 'Polimorfismo', 'Exceções'
@@ -87,17 +109,6 @@ export const listCourses: ICourses[] = [
     date: '08/2022'
   },
   {
-    title: 'Java Intermediário',
-    learnings: [
-      'Java', 'Enums', 'Bibliotecas Math, Data e Locale', 'Threads'
-    ],
-    workload: 9,
-    local: "Loiane.training",
-    certicadeUrl: "https://loiane.training/certificado/wY7MRgNrtjKF7BtSk0E0",
-    relevance: 10,
-    date: '09/2022'
-  },
-  {
     title: 'Microsserviços do 0 com Spring Cloud, Spring Boot e Docker',
     learnings: [
       'Microsserviços', 'Spring', 'Docker', 'Threads', 'Eureka', 'Zipkin', 'Spring Cloud'
@@ -117,17 +128,6 @@ export const listCourses: ICourses[] = [
     local: "Udemy",
     certicadeUrl: "https://www.udemy.com/certificate/UC-761a569e-a637-487c-b999-48a819cfbf85/",
     relevance: 6,
-    date: '12/2022'
-  },
-  {
-    title: 'React do Zero a Maestria (c/ hooks, router, API, Projetos)',
-    learnings: [
-      'React', 'React Hooks', 'React Routes', 'Context API', 'Redux', 'MongoDB', 'SPAs'
-    ],
-    workload: 30,
-    local: "Udemy",
-    certicadeUrl: "https://www.udemy.com/certificate/UC-761a569e-a637-487c-b999-48a819cfbf85/",
-    relevance: 5,
     date: '12/2022'
   },
 ];

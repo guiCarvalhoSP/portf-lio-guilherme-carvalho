@@ -7,10 +7,14 @@
     color: $black;
   }
 
-  p, a {
+  a {
     font-size: 20px;
     color: $white;
     text-decoration: none;
+
+    &:hover {
+      color: $light-gray;
+    }
   }
 
   h4 {

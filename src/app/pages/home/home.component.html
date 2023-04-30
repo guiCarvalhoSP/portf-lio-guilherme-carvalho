@@ -2,9 +2,16 @@
   <app-skills [lenguages]="lenguagesIcons" [tools]="toolsIcons"></app-skills>
 
   <div
-    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center margin-elements">
-    <app-carrousel title="Diferenciais" [panels]="slidesDifferentials"></app-carrousel>
-    <app-carrousel title="Soft Skills" [panels]="slidesSoftSkills"></app-carrousel>
+    class="container d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center margin-elements"
+  >
+    <app-carrousel
+      title="Diferenciais"
+      [panels]="slidesDifferentials"
+    ></app-carrousel>
+    <app-carrousel
+      title="Soft Skills"
+      [panels]="slidesSoftSkills"
+    ></app-carrousel>
   </div>
 
   <app-projects></app-projects>
@@ -19,7 +26,14 @@
               <i class="fa-solid fa-phone fa-rotate-270"></i>
               Telefone/Whatsapp:
             </h4>
-            <p class="ms-md-5">(11) 99377-7427</p>
+
+            <a
+              href="https://wa.me/5511993777427?text=Dev%20Fullstack%20-%20Entre%20em%20contato%20para%20mais%20informações"
+              target="_blank"
+              class="ms-md-5"
+            >
+              (11) 99377-7427
+            </a>
           </div>
 
           <div class="col-xl-6 col-12 text-md-end">
@@ -27,7 +41,9 @@
               <i class="fa-solid fa-envelope"></i>
               Email:
             </h4>
-            <p class="me-md-5">guilhermediascarvalhooo@gmail.com</p>
+            <a href="mailto:guilhermediascarvalhooo@gmail.com" class="me-md-5">
+              guilhermediascarvalhooo@gmail.com
+            </a>
           </div>
         </div>
 
@@ -37,7 +53,11 @@
               <i class="fa-brands fa-linkedin"></i>
               Linkedin:
             </h4>
-            <a class="ms-md-5" href="https://www.linkedin.com/in/guilherme-dias-carvalho/" target="_blank">
+            <a
+              class="ms-md-5"
+              href="https://www.linkedin.com/in/guilherme-dias-carvalho/"
+              target="_blank"
+            >
               https://www.linkedin.com/in/guilherme-dias-carvalho/
             </a>
           </div>
@@ -47,7 +67,11 @@
               <i class="fa-brands fa-github"></i>
               Github:
             </h4>
-            <a class="me-md-5" href="https://github.com/guiCarvalhoSP" target="_blank">
+            <a
+              class="me-md-5"
+              href="https://github.com/guiCarvalhoSP"
+              target="_blank"
+            >
               https://github.com/guiCarvalhoSP
             </a>
           </div>
@@ -58,11 +82,13 @@
 
   <app-courses></app-courses>
 
-  <div class="container  more-informations rounded py-3">
+  <div class="container more-informations rounded py-3">
     <h4 class="text-center">Informações extras</h4>
     <p class="text-center">
-      <small>Você chegou ate aqui? Muito obrigado pela atenção! Veja então algumas informações extras pessoais
-        minhas abaixo. 😁</small>
+      <small
+        >Você chegou ate aqui? Muito obrigado pela atenção! Veja então algumas
+        informações extras pessoais minhas abaixo. 😁</small
+      >
     </p>
 
     <p class="my-2">
@@ -73,21 +99,25 @@
       das obras. Caso deseje ver algumas das minhas pinturas, veja meu
       <a href="https://www.instagram.com/guilherme_dcarvalho0/" target="_blank">
         Instragram
-      </a> 🙂.
+      </a>
+      🙂.
     </p>
     <p class="my-2">
-      Uma coisa que gosto de fazer é cozinhar; frequentemente testo e crio novas receitas, e fico feliz quando faço algo
-      que as pessoas elogiam o sabor. Nem sempre as receitas dão certo 😅, mas é somente testando e tantando várias vezes
-      que se pode aperfeiçoar elas!
+      Uma coisa que gosto de fazer é cozinhar; frequentemente testo e crio novas
+      receitas, e fico feliz quando faço algo que as pessoas elogiam o sabor.
+      Nem sempre as receitas dão certo 😅, mas é somente testando e tantando
+      várias vezes que se pode aperfeiçoar elas!
     </p>
 
     <p class="my-2">
-      Sou um adepto das artes marciais. Tenho um objetivo de aprender o máximo de técnicas possíveis das mais variadas
-      artes, assim como suas filosofias que as regem. Atualmente sou praticante de Muay Thai.
+      Sou um adepto das artes marciais. Tenho um objetivo de aprender o máximo
+      de técnicas possíveis das mais variadas artes, assim como suas filosofias
+      que as regem. Atualmente sou praticante de Muay Thai.
     </p>
     <p class="my-1">
-      Também gosto de jogos, sejam eles brincadeiras para fazer com um grupo de amigos, eletrônicos, ou de jogos de
-      tabuleiro. Nos jogos eletrônicos gosto dos genêros simulação, tycoons (jogos de gerenciamento), ação e de vez em
+      Também gosto de jogos, sejam eles brincadeiras para fazer com um grupo de
+      amigos, eletrônicos, ou de jogos de tabuleiro. Nos jogos eletrônicos gosto
+      dos genêros simulação, tycoons (jogos de gerenciamento), ação e de vez em
       quando puzzles; já nos de tabuleiro, gosto especialmente de RPG's de mesa.
     </p>
   </div>

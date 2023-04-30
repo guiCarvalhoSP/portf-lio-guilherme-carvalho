@@ -26,7 +26,6 @@ export class CarrouselComponent implements OnInit {
   @ViewChild('carousel', { static: true }) carousel!: NgbCarousel ;
 
 	constructor(carouselConfig: NgbCarouselConfig) {
-		// customize default values of carousels used by this component tree
 		carouselConfig.showNavigationArrows = false;
   }
 

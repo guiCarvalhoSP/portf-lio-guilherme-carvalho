@@ -22,8 +22,7 @@ h4 {
     height: 90px;
   }
 
-  .slide-content {
-    // width: 60%;
+  .content {
     h5 {
       color: $light-gray;
     }
@@ -32,7 +31,6 @@ h4 {
       font-size: 13px;
       color: $gray;
       text-align: justify;
-      overflow: auto;
     }
   }
 }

@@ -14,9 +14,11 @@
 
 				<img class="image me-3" [src]="panel.imageUrl" [alt]="panel.title"/>
 
-				<div class="slide-content d-flex flex-column">
+				<div class="content d-flex flex-column ">
 					<h5>{{ panel.title }}</h5>
-					<p>{{ panel.content }}</p>
+					<div class="overflow-auto pe-1">
+						<p>{{ panel.content }}</p>
+					</div>
 				</div>
 			</div>
 		</ng-template>

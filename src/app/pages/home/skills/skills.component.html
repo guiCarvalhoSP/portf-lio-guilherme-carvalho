@@ -3,7 +3,7 @@
     <h2 class="w-100 ps-2 mb-4">Habilidades.</h2>
 
       <h3 class="w-100 mb-4">Linguagens:</h3>
-      <div class="skills_cards me-5 mb-2" *ngFor="let icon of lenguagesIcons">
+      <div class="skills_cards mx-3 mb-2" *ngFor="let icon of lenguagesIcons">
           <svg role="img" [attr.viewBox]="icon.viewBox" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
               <title>{{ icon.name }}</title>
               <path 
@@ -12,7 +12,7 @@
       </div>
 
       <h3 class="w-100 mb-4 mt-4 mb-1">Libs, Frameworks, e outras ferramentas:</h3>
-      <div class="skills_cards me-5 mb-2" *ngFor="let icon of toolsIcons">
+      <div class="skills_cards mx-3 mb-2" *ngFor="let icon of toolsIcons">
           <svg role="img" [attr.viewBox]="icon.viewBox" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
               <title>{{ icon.name }}</title>
               <path 

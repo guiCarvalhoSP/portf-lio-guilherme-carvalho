@@ -6,7 +6,7 @@ $border_width: 346px;
   background-color: $gray;
   color: $white;
 
-  h3 span {
+  h3  span{
     @include border-detail($border_in_top: true, $color: $light-gray);
   }
 
@@ -64,5 +64,14 @@ $border_width: 346px;
     width: $border_width;
     height: 47px;
     @include border-detail($border_in_top: false, $color: $light-gray);
+  }
+}
+
+@media (max-width: 380px) {
+  .card-container h3 {
+    @include border-detail($border_in_top: true, $color: $light-gray);
+    span {
+      border: none;
+    }
   }
 }

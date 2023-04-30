@@ -12,4 +12,4 @@ Atualmente está em desenvolvimento. As tecnologias usadas nele são: Angular 14
 * Ao terminar de instalar as dependências de projeto, execute o comando no terminal `ng serve` para executar o projeto na porta 4200. A aplicação poderá ser acessada por qualquer navegador moderno no pelo link `http://localhost:4200/` 
 
 ### Versão do projeto:
-* V0.0.11
+* V0.1.1

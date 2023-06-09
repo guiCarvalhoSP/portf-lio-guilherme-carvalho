@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { iconsLenguages, iconsLibsAndTools, ISvg_Icons } from 'src/app/utils/icons';
-import { IPanelContent } from 'src/app/utils/IPainelContent';
+import { IPanelContent } from 'src/app/utils/interfaces/IPainelContent';
 import { contentsDifferentials, contentsSoftSkills } from 'src/app/utils/slidesContent';
 
 @Component({

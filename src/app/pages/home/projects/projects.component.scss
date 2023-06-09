@@ -8,7 +8,7 @@
     color: $orange;
   }
 
-  .advice p{
+  .advice p {
     text-align: center;
     color: $gray;
     font-size: 28px;
@@ -26,7 +26,7 @@
       width: 100vw;
       max-width: 280px;
       background-color: $gray;
-      transition: .1s ease-in;
+      transition: 0.1s ease-in;
       p {
         color: $light-gray;
         span {
@@ -35,69 +35,9 @@
         }
       }
 
-      //These parts of the code will be removed in the future
-      .image {
-        width: 90%;
-        height: 35%;
-        margin-top: 20px;
-        border-radius: 5px;
+      .cards_projects:hover {
+        transform: scale(1.1);
       }
-
-      .text {
-        width: 90%;
-
-        .titles {
-          height: 16px;
-          background-color: $white;
-          border-radius: 3px;
-          &.project {
-            &_name {
-              width: 30%;
-            }
-
-            &_tools {
-              width: 40%;
-            }
-
-            &_description {
-              width: 50%;
-            }
-          }
-        }
-
-        .content {
-          border-radius: 3px;
-          height: 16px;
-          background-color: $light-gray;
-
-          &.name {
-            width: 50%;
-          }
-
-          &.tools {
-            width: 50%;
-          }
-
-          &.description {
-            width: 100%;
-            height: 110px;
-          }
-        }
-      }
-
-      .actions {
-        width: 90%;
-        .button {
-          width: 80px;
-          height: 30px;
-          border: 1px solid $cyan;
-          border-radius: 5px;
-        }
-      }
-    }
-
-    .cards_projects:hover {
-      transform: scale(1.1);
     }
   }
 }

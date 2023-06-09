@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbCarouselConfig, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
-import { IPanelContent } from 'src/app/utils/IPainelContent';
+import { IPanelContent } from 'src/app/utils/interfaces/IPainelContent';
 
 @Component({
   selector: 'app-carrousel',

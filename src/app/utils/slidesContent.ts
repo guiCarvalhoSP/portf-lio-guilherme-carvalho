@@ -1,4 +1,4 @@
-import { IPanelContent } from './IPainelContent';
+import { IPanelContent } from './interfaces/IPainelContent';
 
 const contentsDifferentials: IPanelContent[] = [
   {

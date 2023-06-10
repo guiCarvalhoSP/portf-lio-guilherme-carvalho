@@ -6,31 +6,31 @@
       <p>Estamos em obras, logo mais estará disponível esta sessão!</p>
       <p >🚧 👷🚜 🚧</p>
     </div>
-    <div class="d-flex flex-wrap justify-content-around mb-3">
-
+    <div class="d-flex flex-wrap justify-content-aroud mb-3">
       <!-- The code below is for example only. It will be changed in the future. -->
-      <div class="project d-flex align-items-center flex-column m-3">
-        <img class="image" src="./assets/images/breve.png" alt="Em breve">
+      <div *ngFor="let project of projects" class="project m-3 ">
 
-        <div class="mb-3 mt-4 d-flex text">
-          <div class="titles project_name me-3"></div>
-          <div class="content name"></div>
-        </div>
+        <img class="image" src="./assets/images/portfolio-demostrative.png" alt="Em breve">
 
-
-        <div class="mb-3 d-flex text">
-          <div class="titles project_tools me-3"></div>
-          <div class="content tools"></div>
-        </div>
-
-        <div class="mb-2 text">
-          <div class="titles project_description mb-1"></div>
-          <div class="content description"></div>
-        </div>
-
-        <div class="d-flex justify-content-between actions">
-          <div class="button"></div>
-          <div class="button"></div>
+        <div class="project-card p-3">
+          <div class="title">
+            <h5>{{ project.title }}</h5>
+          </div>
+  
+          <div class="features mb-2">
+            <p>{{ project.features | features }} </p>
+          </div>
+  
+          <div class="about mb-2">
+            <h6>Sobre:</h6>
+            <p>{{ project.about }}</p>
+          </div>
+  
+          <div class="actions d-flex justify-content-between">
+            <a [href]="project.github_link" target="_blank">Código fonte</a>
+            <a *ngIf="project.deployment_link" [href]="project.deployment_link" target="_blank">Ver deploy</a>
+  
+          </div>
         </div>
 
       </div>

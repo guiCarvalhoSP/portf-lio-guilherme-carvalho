@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeaturesPipe } from './features.pipe';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    FeaturesPipe
+  ],
   imports: [
     CommonModule,
   ],
   exports: [
-    NgbCarouselModule
+    NgbCarouselModule,
+    FeaturesPipe
   ]
 })
 export class SharedModule { }

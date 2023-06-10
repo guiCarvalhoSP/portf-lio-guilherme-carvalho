@@ -18,25 +18,46 @@
     border: solid 2px $dark-cyan;
     border-radius: 10px;
     box-shadow: 0px 0px 10px $dark-cyan;
-    height: 80%;
+    // height: 80%;
+  }
 
-    .cards_projects {
-      border-radius: 10px;
-      height: 450px;
-      width: 100vw;
-      max-width: 280px;
-      background-color: $gray;
-      transition: 0.1s ease-in;
-      p {
-        color: $light-gray;
-        span {
-          color: $white;
-          font-weight: 700;
-        }
+  .project {
+
+    .image {
+      width: 350px;
+    }
+
+    &-card {
+      box-shadow: 0px 0px 10px $gray;
+      border-radius: 5px;
+      color: $white;
+      width: 350px;
+      text-align: justify;
+      transition: .2s;
+  
+      &:hover {
+        box-shadow: 0px 0px 10px $light-gray;
       }
-
-      .cards_projects:hover {
-        transform: scale(1.1);
+  
+      .features p{
+        color: $light-gray;
+        font-size: 15px;
+      }
+  
+      .about p{
+        font-size: 14px;
+      }
+  
+      .actions a {
+        color: $white;
+        font-weight: 700;
+        text-decoration: underline;
+        padding: .2em .5em;
+        border-radius: 5px;
+        transition: .2s;
+        &:hover {
+          background-color: $dark-cyan;
+        }
       }
     }
   }
